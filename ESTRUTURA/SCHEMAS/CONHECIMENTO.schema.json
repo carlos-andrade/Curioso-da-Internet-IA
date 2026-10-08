@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CONHECIMENTO",
+  "type": "object",
+  "required": ["id", "titulo", "tipo", "descricao", "status", "fontes", "evidencias", "capturado_em", "revisado_em"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CONH-[0-9]{8}-[0-9]{4}$"},
+    "titulo": {"type": "string", "minLength": 1},
+    "tipo": {"type": "string", "enum": ["fato", "contexto", "cronologia", "causa", "consequencia", "interpretacao", "hipotese"]},
+    "descricao": {"type": "string", "minLength": 1},
+    "entidades": {"type": "array", "items": {"type": "string", "pattern": "^ENT-[0-9]{8}-[0-9]{4}$"}},
+    "fontes": {"type": "array", "items": {"type": "string", "pattern": "^FONTE-[0-9]{8}-[0-9]{4}$"}},
+    "evidencias": {"type": "array", "items": {"type": "string", "pattern": "^EVID-[0-9]{8}-[0-9]{4}$"}},
+    "status": {"type": "string", "enum": ["descoberta", "em_investigacao", "parcialmente_validada", "validada", "conhecimento_consolidado", "publicavel", "publicado", "monitorado", "atualizado", "contestada", "nao_confirmada", "superada", "corrigida", "arquivada"]},
+    "capturado_em": {"type": "string", "format": "date-time"},
+    "revisado_em": {"type": "string", "format": "date-time"},
+    "ultima_atualizacao": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "additionalProperties": false
+}
