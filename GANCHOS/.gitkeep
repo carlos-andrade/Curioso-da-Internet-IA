@@ -1,0 +1,9 @@
+# BANCO DE GANCHOS
+
+FASE-1 — repertório editorial reutilizável.
+
+Famílias: QUEBRA_DE_EXPECTATIVA, MEDO, OPORTUNIDADE e URGENCIA.
+
+O gancho pode dramatizar uma pergunta ou consequência, mas nunca afirmar como fato aquilo que a pesquisa não sustenta.
+
+Campos mínimos: gancho_id, familia, texto, tema, registro_de_origem, data, status, observacoes.
