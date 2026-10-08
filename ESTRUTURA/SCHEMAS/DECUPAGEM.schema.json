@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DECUPAGEM",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "roteiro_id",
+    "cena_id",
+    "tempo",
+    "imagem",
+    "video",
+    "audio",
+    "texto_tela"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tipo": {
+      "const": "DECUPAGEM"
+    },
+    "roteiro_id": {
+      "type": "string"
+    },
+    "cena_id": {
+      "type": "string"
+    },
+    "tempo": {
+      "type": "string"
+    },
+    "imagem": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "audio": {
+      "type": "string"
+    },
+    "texto_tela": {
+      "type": "string"
+    }
+  }
+}
