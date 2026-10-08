@@ -1,6 +1,6 @@
 # ROADMAP — Curioso da Internet IA
 
-> Projeto: Curioso da Internet IA | Documento: Roadmap | Versão: 1.0 | Data: 2026-10-08 | Status: ATIVO
+> Projeto: Curioso da Internet IA | Documento: Roadmap | Versão: 1.1 | Data: 2026-10-08 | Status: ATIVO
 
 ## FASE 0 — Fundação
 - [x] /PROMPT/
@@ -10,20 +10,25 @@
 - [x] Carta, fluxo, rastreabilidade e qualidade
 
 ## FASE 1 — Conhecimento
-- [ ] Estruturar FONTES e PESQUISAS
-- [ ] Definir esquema de registros
-- [ ] Taxonomia de temas
-- [ ] IDs e nomenclatura
-- [ ] CONEXOES
-- [ ] Banco de hooks
-- [ ] Banco de ideias
+- [x] Estruturar FONTES e PESQUISAS
+- [x] Definir esquema de registros
+- [x] Taxonomia de temas
+- [x] IDs e nomenclatura
+- [x] CONEXOES
+- [x] Banco de hooks
+- [x] Banco de ideias
+- [x] Definir estados e protocolo de conflitos
+- [x] Definir validação estrutural
+- [x] Criar schemas JSON dos registros centrais
+
+**Resultado:** núcleo estrutural definido. A fase de ingestão em escala permanece bloqueada até a FASE 2 estabelecer captura, validação temporal e proveniência operacional.
 
 ## FASE 2 — Validação
 - [ ] Captura padronizada de fontes
 - [ ] Protocolo de conflito
 - [ ] Validação temporal
 - [ ] Correções e atualizações
-- [ ] Proveniência
+- [ ] Proveniência operacional
 
 ## FASE 3 — Produção
 - [ ] HISTORIAS
