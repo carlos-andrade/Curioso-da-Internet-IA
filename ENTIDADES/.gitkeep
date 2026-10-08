@@ -1,0 +1,7 @@
+# ENTIDADES
+
+FASE-1 — objetos reutilizáveis da base de conhecimento.
+
+Categorias iniciais: PESSOAS, EMPRESAS, ORGANIZACOES, LUGARES, TECNOLOGIAS, EVENTOS, DOCUMENTOS e CONCEITOS.
+
+Uma entidade pode participar de múltiplas pesquisas e histórias; aliases devem ser preservados para evitar duplicação.
