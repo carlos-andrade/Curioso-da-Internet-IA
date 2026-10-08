@@ -1,0 +1,19 @@
+schema: conhecimento
+versao: "1.0"
+id: "CONH-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - tipo_afirmacao
+  - afirmacao
+  - evidencias
+  - estado
+campos:
+  id: identificador_estavel
+  tipo_afirmacao: "FATO|INTERPRETACAO|HIPOTESE|BOATO_NAO_CONFIRMADO"
+  afirmacao: texto
+  evidencias: lista_de_ids
+  entidades: lista_de_ids
+  contradicoes: lista_de_ids
+  data_validade: data_opcional
+  estado: "EM_INVESTIGACAO|PARCIALMENTE_VALIDADA|VALIDADA|CONSOLIDADA|CONTESTADA|SUPERADA|CORRIGIDA"
+regra: "Nenhuma hipótese ou boato deve ser apresentado como fato."
