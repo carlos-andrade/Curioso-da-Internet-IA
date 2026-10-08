@@ -5,8 +5,8 @@ tipo_documento: "CONTROLE DE FASE"
 fase: "FASE-2"
 id_documento: "DOC-20261008-0036"
 titulo: "FASE 2 — VALIDAÇÃO"
-status: "ATIVO"
-versao: "1.1"
+status: "CONCLUÍDA"
+versao: "1.2"
 data_criacao: "2026-10-08"
 data_atualizacao: "2026-10-08"
 origem: "GATE FASE 2"
@@ -30,7 +30,18 @@ Esta fase operacionaliza o Gate definido em `GOVERNANCA/GATE-FASE-2.md`.
 
 ## Estado atual
 
-**EM EXECUÇÃO — validador determinístico e testes operacionais preparados.**
+**CONCLUÍDA — Gate FASE 2 aprovado em 2026-10-08.**
+
+A validação determinística foi executada no GitHub Actions com 8 registros operacionais, sem erros ou avisos.
+
+## Evidência de saída
+
+- Commit: `a06b9b8ffcadf444a3cc89d5c7f6db89d24c52b3`
+- Workflow: `validar-fase-2`
+- Resultado: `PASS`
+- Testes: `5/5 PASS`
+- Registros: `8`
+- Artefato: `fase2-validacao`
 
 ## Critério de saída
 
