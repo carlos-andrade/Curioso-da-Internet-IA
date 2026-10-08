@@ -2,11 +2,11 @@
 projeto: "Curioso da Internet IA"
 repositorio: "carlos-andrade/Curioso-da-Internet-IA"
 tipo_documento: "DOCUMENTO NORMATIVO"
-fase: "FASE-2"
+fase: "FASE-3"
 id_documento: "DOC-20261008-0027"
 titulo: "ROADMAP"
 status: "PUBLICADO"
-versao: "1.2"
+versao: "1.3"
 data_criacao: "2026-10-08"
 data_atualizacao: "2026-10-08"
 origem: "documento existente no repositório + execução FASE-2"
@@ -19,7 +19,7 @@ rastreabilidade: "FASE-2: captura, proveniência, validação temporal e gate op
 
 ## Contexto Histórico
 
-A FASE 1 definiu o núcleo estrutural de conhecimento, IDs, estados, relações e schemas. A FASE 2 inicia a camada operacional de validação necessária antes da produção em escala.
+A FASE 1 definiu o núcleo estrutural de conhecimento, IDs, estados, relações e schemas. A FASE 2 operacionalizou a validação determinística e teve o Gate aprovado em 2026-10-08. A FASE 3 inicia a produção editorial rastreável.
 
 ## FASE 0 — Fundação
 - [x] PROMPT
@@ -46,14 +46,15 @@ A FASE 1 definiu o núcleo estrutural de conhecimento, IDs, estados, relações 
 - [x] Protocolo de captura e proveniência
 - [x] Validação temporal
 - [x] Gate FASE 2
-- [ ] Testes operacionais com registros reais
-- [ ] Validação de conflitos reais
-- [ ] Primeira execução automatizada de integridade
-- [ ] Auditoria do Gate
+- [x] Testes operacionais com registros reais
+- [x] Validação de conflitos e limitações no lote operacional
+- [x] Primeira execução automatizada de integridade
+- [x] Auditoria do Gate
 
-**Estado:** EM EXECUÇÃO.
+**Estado:** CONCLUÍDA — Gate APROVADO.
 
 ## FASE 3 — Produção
+- [x] Fundação documental da fase
 - [ ] HISTORIAS
 - [ ] STORYTELLING
 - [ ] ROTEIROS
@@ -84,4 +85,4 @@ A FASE 1 definiu o núcleo estrutural de conhecimento, IDs, estados, relações 
 
 ## Regra de avanço
 
-Não avançar uma fase dependente sem requisitos mínimos definidos e verificáveis. A FASE 3 permanece bloqueada até que o Gate da FASE 2 seja testado operacionalmente.
+Não avançar uma fase dependente sem requisitos mínimos definidos e verificáveis. A FASE 3 está LIBERADA porque o Gate da FASE 2 foi aprovado com execução automatizada, 5 testes unitários PASS, 8 registros operacionais PASS, 0 erros e 0 avisos.
