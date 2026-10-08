@@ -1,0 +1,44 @@
+name: "Curioso da Internet IA — FASE 2 — Validação"
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "FONTES/**"
+      - "EVIDENCIAS/**"
+      - "PESQUISAS/**"
+      - "CONHECIMENTO/**"
+      - "ENTIDADES/**"
+      - "CONEXOES/**"
+      - "GANCHOS/**"
+      - "BANCO_DE_IDEIAS/**"
+      - "scripts/validar_fase_2.py"
+      - "tests/**"
+      - "ESTRUTURA/LAYOUT-VALIDACAO-FASE-2.md"
+      - "GOVERNANCA/GATE-FASE-2.md"
+      - "GOVERNANCA/CARTA-FASE-2.md"
+  pull_request:
+    paths:
+      - "FONTES/**"
+      - "EVIDENCIAS/**"
+      - "PESQUISAS/**"
+      - "CONHECIMENTO/**"
+      - "ENTIDADES/**"
+      - "CONEXOES/**"
+      - "GANCHOS/**"
+      - "BANCO_DE_IDEIAS/**"
+      - "scripts/validar_fase_2.py"
+      - "tests/**"
+
+jobs:
+  validar-fase-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testes unitários
+        run: python -m unittest discover -s tests -v
+      - name: Validação determinística
+        run: python scripts/validar_fase_2.py
