@@ -1,0 +1,13 @@
+schema: ideia_gancho
+versao: "1.0"
+id_ideia: "IDEIA-AAAA-NNNNN"
+id_gancho: "GANCHO-AAAA-NNNNN"
+ideia:
+  obrigatorios: [id, titulo, origem, estado]
+  estado: "CAPTURADA|EM_AVALIACAO|PRIORIZADA|DESCARTADA|CONVERTIDA_EM_HISTORIA"
+  origem: "conhecimento|entidade|conexao|pesquisa|externa"
+gancho:
+  obrigatorios: [id, mecanismo, texto, estado]
+  mecanismo: "QUEBRA_DE_EXPECTATIVA|MEDO|OPORTUNIDADE|URGENCIA"
+  estado: "RASCUNHO|VALIDADO_EDITORIALMENTE|TESTADO|ARQUIVADO"
+regra: "Gancho não pode criar uma promessa factual que o conteúdo não consiga sustentar."
