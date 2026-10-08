@@ -1,0 +1,20 @@
+schema: fonte
+versao: "1.0"
+id: "FONTE-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - tipo
+  - titulo
+  - data_registro
+  - estado
+campos:
+  id: identificador_estavel
+  tipo: "oficial|academica|jornalistica|institucional|primaria|secundaria|outra"
+  titulo: texto
+  autor_entidade: texto_opcional
+  data_publicacao: data_opcional
+  localizacao: url_ou_referencia
+  data_acesso: data
+  estado: "ATIVA|SUPERADA|ARQUIVADA"
+  observacoes: texto_opcional
+regra: "Fonte não é automaticamente evidência."
