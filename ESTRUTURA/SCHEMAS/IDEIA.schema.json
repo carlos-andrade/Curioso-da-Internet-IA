@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IDEIA",
+  "type": "object",
+  "required": ["id", "titulo", "origem", "status", "criada_em"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^IDEIA-[0-9]{8}-[0-9]{4}$"},
+    "titulo": {"type": "string", "minLength": 1},
+    "origem": {"type": "string", "minLength": 1},
+    "conhecimento_ids": {"type": "array", "items": {"type": "string", "pattern": "^CONH-[0-9]{8}-[0-9]{4}$"}},
+    "entidade_ids": {"type": "array", "items": {"type": "string", "pattern": "^ENT-[0-9]{8}-[0-9]{4}$"}},
+    "status": {"type": "string", "enum": ["descoberta", "avaliada", "priorizada", "em_producao", "publicada", "arquivada"]},
+    "criada_em": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": false
+}
