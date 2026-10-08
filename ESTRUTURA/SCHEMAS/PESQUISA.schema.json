@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PESQUISA",
+  "type": "object",
+  "required": ["id", "titulo", "objetivo", "evidencias", "status", "criada_em"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^PESQ-[0-9]{8}-[0-9]{4}$"},
+    "titulo": {"type": "string", "minLength": 1},
+    "objetivo": {"type": "string", "minLength": 1},
+    "evidencias": {"type": "array", "items": {"type": "string", "pattern": "^EVID-[0-9]{8}-[0-9]{4}$"}},
+    "conflitos": {"type": "array", "items": {"type": "string"}},
+    "incertezas": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string", "enum": ["descoberta", "em_investigacao", "parcialmente_validada", "validada", "contestada", "nao_confirmada", "superada", "corrigida", "arquivada"]},
+    "criada_em": {"type": "string", "format": "date-time"},
+    "revisada_em": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "additionalProperties": false
+}
