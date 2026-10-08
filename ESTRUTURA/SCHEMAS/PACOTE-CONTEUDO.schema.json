@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PACOTE_CONTEUDO",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "origem_id",
+    "plataforma",
+    "formato",
+    "titulo",
+    "texto",
+    "proveniencia_completa"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tipo": {
+      "const": "PACOTE_CONTEUDO"
+    },
+    "origem_id": {
+      "type": "string"
+    },
+    "plataforma": {
+      "type": "string"
+    },
+    "formato": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "proveniencia_completa": {
+      "type": "boolean"
+    }
+  }
+}
