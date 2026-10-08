@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STORYTELLING",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "historia_id",
+    "gancho",
+    "contexto",
+    "conflito",
+    "virada",
+    "consequencia",
+    "significado",
+    "fechamento",
+    "evidencia_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tipo": {
+      "const": "STORYTELLING"
+    },
+    "historia_id": {
+      "type": "string"
+    },
+    "gancho": {
+      "type": "string"
+    },
+    "contexto": {
+      "type": "string"
+    },
+    "conflito": {
+      "type": "string"
+    },
+    "virada": {
+      "type": "string"
+    },
+    "consequencia": {
+      "type": "string"
+    },
+    "significado": {
+      "type": "string"
+    },
+    "fechamento": {
+      "type": "string"
+    },
+    "evidencia_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
