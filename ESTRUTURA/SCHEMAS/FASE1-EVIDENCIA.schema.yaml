@@ -1,0 +1,20 @@
+schema: evidencia
+versao: "1.0"
+id: "EVID-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - fonte_id
+  - afirmacao_sustentada
+  - localizacao_na_fonte
+  - data_registro
+  - estado
+campos:
+  id: identificador_estavel
+  fonte_id: referencia_fonte
+  afirmacao_sustentada: texto
+  localizacao_na_fonte: pagina_secao_timestamp_url_ou_outro
+  recorte: texto_opcional
+  limitacoes: texto_opcional
+  data_registro: data
+  estado: "DESCOBERTA|EM_INVESTIGACAO|PARCIALMENTE_VALIDADA|VALIDADA|CONTESTADA|SUPERADA"
+regra: "A evidência deve permitir retornar ao ponto verificável da fonte."
