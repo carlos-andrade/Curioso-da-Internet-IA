@@ -1,0 +1,23 @@
+schema: pesquisa
+versao: "1.0"
+id: "PESQ-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - pergunta
+  - data_inicio
+  - estado
+campos:
+  id: identificador_estavel
+  pergunta: texto
+  escopo: texto_opcional
+  data_inicio: data
+  data_fim: data_opcional
+  fontes: lista_de_ids
+  evidencias: lista_de_ids
+  conclusoes: lista_de_afirmacoes
+  contradicoes: lista_de_registros
+  hipoteses: lista_de_afirmacoes
+  lacunas: lista_de_textos
+  estado: "DESCOBERTA|EM_INVESTIGACAO|PARCIALMENTE_VALIDADA|VALIDADA|CONSOLIDADA|ARQUIVADA"
+  proxima_pergunta: texto_opcional
+regra: "Pesquisa organiza evidências; não transforma hipótese em fato."
