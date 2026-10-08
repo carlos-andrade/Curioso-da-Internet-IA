@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GANCHO",
+  "type": "object",
+  "required": ["id", "texto", "tipo", "criado_em"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^HOOK-[0-9]{8}-[0-9]{4}$"},
+    "texto": {"type": "string", "minLength": 1},
+    "tipo": {"type": "string", "enum": ["quebra_de_expectativa", "medo", "oportunidade", "urgencia", "curiosidade", "contradicao", "segredo", "descoberta", "pergunta"]},
+    "conhecimento_ids": {"type": "array", "items": {"type": "string", "pattern": "^CONH-[0-9]{8}-[0-9]{4}$"}},
+    "criado_em": {"type": "string", "format": "date-time"},
+    "desempenho": {"type": ["object", "null"]}
+  },
+  "additionalProperties": false
+}
