@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HISTORIA",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "estado",
+    "titulo_provisorio",
+    "pergunta_central",
+    "conhecimento_ids",
+    "evidencia_ids",
+    "limitacoes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tipo": {
+      "const": "HISTORIA"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "titulo_provisorio": {
+      "type": "string"
+    },
+    "pergunta_central": {
+      "type": "string"
+    },
+    "conhecimento_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidencia_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitacoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
