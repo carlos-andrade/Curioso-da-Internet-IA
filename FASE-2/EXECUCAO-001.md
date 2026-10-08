@@ -5,8 +5,8 @@ tipo_documento: "REGISTRO DE EXECUÇÃO"
 fase: "FASE-2"
 id_documento: "DOC-20261008-0037"
 titulo: "EXECUÇÃO 001 — FASE 2"
-status: "EM EXECUÇÃO"
-versao: "1.0"
+status: "CONCLUÍDA"
+versao: "1.1"
 data_criacao: "2026-10-08"
 data_atualizacao: "2026-10-08"
 origem: "Execução controlada da FASE 2"
@@ -55,3 +55,15 @@ Não avançar para produção editorial em escala.
 ## Próxima ação
 
 Executar e verificar o workflow da FASE 2 no GitHub. Depois, introduzir o primeiro lote operacional de registros reais e repetir o Gate.
+
+## Fechamento da Execução 001
+
+- Workflow GitHub Actions: **SUCESSO**.
+- Commit validado: `a06b9b8ffcadf444a3cc89d5c7f6db89d24c52b3`.
+- Testes unitários: **5/5 PASS**.
+- Validação determinística: **PASS**.
+- Registros operacionais verificados: **8**.
+- Erros: **0**.
+- Avisos: **0**.
+- Artefato `fase2-validacao`: preservado no workflow run `37780472476`.
+- Decisão: **liberar FASE 3**.
