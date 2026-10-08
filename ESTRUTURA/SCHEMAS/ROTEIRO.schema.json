@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ROTEIRO",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "storytelling_id",
+    "formato",
+    "cenas",
+    "evidencia_ids",
+    "estado"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tipo": {
+      "const": "ROTEIRO"
+    },
+    "storytelling_id": {
+      "type": "string"
+    },
+    "formato": {
+      "type": "string"
+    },
+    "cenas": {
+      "type": "array"
+    },
+    "evidencia_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "estado": {
+      "type": "string"
+    }
+  }
+}
