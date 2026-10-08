@@ -1,0 +1,17 @@
+schema: entidade
+versao: "1.0"
+id: "ENT-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - tipo
+  - nome_canonico
+  - estado
+campos:
+  id: identificador_estavel
+  tipo: "PESSOA|EMPRESA|ORGANIZACAO|LUGAR|TECNOLOGIA|EVENTO|DOCUMENTO|CONCEITO"
+  nome_canonico: texto
+  aliases: lista_de_textos
+  descricao: texto_opcional
+  registros_relacionados: lista_de_ids
+  estado: "ATIVA|SUPERADA|ARQUIVADA"
+regra: "Uma entidade deve ser reutilizável e não duplicada sem justificativa."
