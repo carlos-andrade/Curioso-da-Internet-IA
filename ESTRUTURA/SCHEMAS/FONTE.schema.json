@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FONTE",
+  "type": "object",
+  "required": ["id", "tipo", "titulo", "url", "data_captura", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^FONTE-[0-9]{8}-[0-9]{4}$"},
+    "tipo": {"type": "string", "enum": ["primaria", "secundaria", "descoberta"]},
+    "titulo": {"type": "string", "minLength": 1},
+    "autor_ou_entidade": {"type": ["string", "null"]},
+    "url": {"type": "string", "format": "uri"},
+    "data_publicacao": {"type": ["string", "null"], "format": "date"},
+    "data_captura": {"type": "string", "format": "date-time"},
+    "status": {"type": "string", "enum": ["descoberta", "em_investigacao", "validada", "superada", "arquivada"]},
+    "observacoes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
