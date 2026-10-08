@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EVIDENCIA",
+  "type": "object",
+  "required": ["id", "fonte_id", "afirmacao", "classificacao", "capturada_em"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^EVID-[0-9]{8}-[0-9]{4}$"},
+    "fonte_id": {"type": "string", "pattern": "^FONTE-[0-9]{8}-[0-9]{4}$"},
+    "afirmacao": {"type": "string", "minLength": 1},
+    "trecho_ou_localizacao": {"type": ["string", "null"]},
+    "classificacao": {"type": "string", "enum": ["fato_confirmado", "fato_parcialmente_confirmado", "interpretacao", "opiniao", "hipotese", "rumor", "nao_confirmado"]},
+    "capturada_em": {"type": "string", "format": "date-time"},
+    "revisada_em": {"type": ["string", "null"], "format": "date-time"},
+    "observacoes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
