@@ -1,0 +1,18 @@
+schema: conexao
+versao: "1.0"
+id: "CONX-AAAA-NNNNN"
+obrigatorios:
+  - id
+  - origem_id
+  - destino_id
+  - tipo
+  - estado
+campos:
+  id: identificador_estavel
+  origem_id: referencia
+  destino_id: referencia
+  tipo: "DERIVA_DE|SUSTENTA|CONTRADIZ|ATUALIZA|CORRIGE|RELACIONA_SE_A|PARTE_DE|MENCIONA|ORIGINA|GERA"
+  justificativa: texto
+  evidencias: lista_de_ids
+  estado: "DESCOBERTA|VALIDADA|CONTESTADA|SUPERADA"
+regra: "Conexões relevantes devem ser explicitamente justificadas."
