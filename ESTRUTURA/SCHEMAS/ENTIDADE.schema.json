@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ENTIDADE",
+  "type": "object",
+  "required": ["id", "tipo", "nome", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^ENT-[0-9]{8}-[0-9]{4}$"},
+    "tipo": {"type": "string", "enum": ["pessoa", "empresa", "organizacao", "lugar", "tecnologia", "evento", "documento", "conceito"]},
+    "nome": {"type": "string", "minLength": 1},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "descricao": {"type": "string"},
+    "status": {"type": "string", "enum": ["descoberta", "em_investigacao", "validada", "contestada", "superada", "arquivada"]},
+    "fontes": {"type": "array", "items": {"type": "string", "pattern": "^FONTE-[0-9]{8}-[0-9]{4}$"}}
+  },
+  "additionalProperties": false
+}
