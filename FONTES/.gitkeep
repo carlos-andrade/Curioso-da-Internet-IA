@@ -1,0 +1,7 @@
+# FONTES
+
+FASE-1 — camada de origem documental.
+
+Registra materiais de origem usados nas pesquisas. Fonte não é automaticamente evidência.
+
+Campos mínimos: source_id, tipo, titulo, autor_ou_entidade, data, url_ou_localizador, data_de_acesso, status, observacoes.
